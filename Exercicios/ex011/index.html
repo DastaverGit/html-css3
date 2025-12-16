@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dnamica</h1>
+    <p>Tente abrir esse em vários dispositos diferentes ou simpllismente aumenta e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-m.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png"alt="Imagem flexivel" srcset="">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTM5</p>
+    <p>Esssa musiica simula quão bom Deus é bom para Humanidade</p>
+    <p>Eu pelo menos ouço qutro vezes por dia</p>
+    <audio src="Midia/Hosanna_-_Live_from_the_Steps_on_the_Temple_Mount(0).mp3" controls autoplay></audio>
+    
+    <audio>
+        <source src="Midia/05_-_Abel_Alves_-_Aós_i_bó_dia(0).m4a" type="audio/mpg">
+        <source src="Midia/05_-_Abel_Alves_-_Aós_i_bó_dia(0).ogg" type="audio/ogg">
+        <source src="Midia/05_-_Abel_Alves_-_Aós_i_bó_dia(0).wav" type="audio/wav">
+    </audio>
+
+    <audio src="Midia/05_-_Abel_Alves_-_Aós_i_bó_dia(0).m4a" controls autoplay></audio>
+    <p>Esperp ter ajudado conseguir a benção atraves dessa música</p>
+    <p>Abel Alves, popularmente conhecido assim no mndo da música é um cantor com um voz incrivel</p>
+</body>
+</html>
