@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+/<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionameto</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Se usar para enrolarar o conteúdo em relção ao imagem*/
+
+            /*Shorthand-background
+            color> image> position> repeat> [size]> attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
             /*Nota-se que: poderiamos tabém usar " background-size:1000px ao em vez de 100%, mas do 100% ficaria mais legal para o consumidor"*/
 
         }
         main{
             background-color: white;
-            width: 500px;
+            max-width: 400px;
+            /*max-width se usa para controlar largura do conteúdo*/
             margin: auto;
             padding: 10px;
             border-radius: solid darkblue;
