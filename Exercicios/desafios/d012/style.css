@@ -1,13 +1,21 @@
 @charset "UTF-8";
 
+:root {
+   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion one', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100%vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -16,8 +24,10 @@ header{
 }
 
 header> h1{
-    padding-top: 50px;
+    padding-top: 2em;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vh;
     /*font-variant: small-caps; apesar de deixar o palavras maúsculo, fica mais moderno com issso*/
     /*text-transform: uppercase: se usa para deixar tudo maiúscula*/
 }
@@ -41,6 +51,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 50px;
+    font-family: var(--fonte3);
+    font-size: 4.5vh;
 }
 
 section.normal{
@@ -53,8 +65,9 @@ section.imagem{
     color: white;
 }
 
-section.imagem {
-    width: 400px;
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.255);
 }
 
