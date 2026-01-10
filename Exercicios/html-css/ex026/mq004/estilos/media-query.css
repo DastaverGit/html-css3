@@ -1,8 +1,78 @@
 @charset "UTF-8";
 
 /*Todos as demaismedias*/
+ 
+/*Pesquese po: tipcal Breakpoint
+-------------------------------
 
+pequena tela: até 600px
+para celular: de 600 até 768px
+para tablet: de 768 até 992
+para desktop: de 992 até 1200px
+telas grandes: acima 1200
+tv*/
 
-@media print {
-    
+@media print { /*Impressora*/
+   
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+         background-image: url(../imagem/back-print.jpg); /*dinecessario*/ 
+         
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feta  atraves do site wwww.dastaver.com';
+        text-decoration: overline;
+        width: 90vw;
+    }
+}
+    mai h1{
+        text-shadow: none;
+        color: black;
+    }
+
+@media screen and (min-width: 576px) and (max-width: 1024px){/*TABLET*/
+    body{
+        background-image: url(../imagem/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (min-width: 1024px) and (max-width:1440px){/*DESKTOP*/
+body{
+    background-image: url(../imagem/back-pc.jpg);
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+    }
+}
+@media screen and (min-width: 1440px) {/*GRANDES TELAS*/
+    body{
+        background-image: url(../imagem/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
 }
