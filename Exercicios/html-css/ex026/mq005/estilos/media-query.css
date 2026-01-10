@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*Pesquese po: tipcal Breakpoint
+-------------------------------
+
+pequena tela: 320px até 480px
+para celular: 600 até 768px
+para tablet: de 768 até 992
+para desktop: de 992 até 1200px
+telas grandes: acima 1200
+tv*/
+
+@media screen and (min-width: 768px) {
+    i#burger{
+        display: none;
+    }
+}
+
+menu{
+    display: block;
+}
+
+menu >ul >li {
+    display: inline-block;
+}
+
+main{
+    width: 768px;
+}

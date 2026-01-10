@@ -6,8 +6,9 @@
     <title>Midia Query</title>
     <link href="https://fonts.googleapis.com/icon?famy=lyMaterial+Icons" rel="stylesheet"> <!--Não funcionou-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho ()">
     
         <header>
             <h1>Meus Site</h1>
@@ -36,6 +37,13 @@
             </article>
         </main>
         <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    itens.style.disply = 'block'
+                }else{
+                    itens.style.disply = "none"
+                }
+            }
             function clickMenu() {
                 if (itens.style.disply == 'block') {
                     intes.style.disply = 'none'
