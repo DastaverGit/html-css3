@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midia Query</title>
-    <link href="https://fonts.googleapis.com/icon?famy=lyMaterial+Icons" rel="stylesheet"> <!--Não funcionou-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -12,7 +12,8 @@
     
         <header>
             <h1>Meus Site</h1>
-            <i id="burger" class="material-icons" onclick ="clickMenu ()">menu</i>
+            <span id="burger" class="material-icons" onclick ="clickMenu ()">menu</span>
+            
             <menu id="itens">
                 <ul>
                     <li><a href="@">Opção 1</a></li>
@@ -39,16 +40,16 @@
         <script>
             function mudouTamanho() {
                 if (window.innerWidth >= 768) {
-                    itens.style.disply = 'block'
+                    itens.style.display = 'block'
                 }else{
-                    itens.style.disply = "none"
+                    itens.style.display = "none"
                 }
             }
             function clickMenu() {
-                if (itens.style.disply == 'block') {
-                    intes.style.disply = 'none'
+                if (itens.style.display == 'block') {
+                    intes.style.display = 'none'
                 }else{
-                    itens.style.disply = 'bock'
+                    itens.style.display = 'bock'
                 }
             }
         </script>
